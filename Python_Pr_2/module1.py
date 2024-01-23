@@ -1,6 +1,14 @@
 ﻿﻿from datetime import *
 from random import *
 from math import *
+#Ülesanne 13
+print("Arv Ruut kuup")
+print()
+
+for i in range(1,11):
+    ruut = i ** 2
+    kuup = i ** 3
+    print(f"{1:2} {ruut:2} {kuup:3}")
 #Ülesanne 11
 from random import *
 number=randint(1,100)
