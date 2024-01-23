@@ -1,5 +1,66 @@
-﻿from datetime import *
+﻿﻿from datetime import *
 from random import *
+from math import *
+#Ülesanne 11
+from random import *
+number=randint(1,100)
+katsed=3
+while katsed>0:
+    külaline = int(input("Угадайте число от 1 до 100"))
+    if külaline == number:
+        print("Поздравляем, вы угадали число")
+        break
+    else:
+        katsed -= 1
+        print(f"Неверно у вас осталось {katsed} попыток")
+        if katsed -- 0:
+            print(f"Извините, вы использлвали все попытки. Загаданное число было {number}.")
+            veelkord = input("Хотите ли угадать?: ").lower()
+            if veelkord.lower()=="нет":
+                break
+            else:
+                katsed=3
+#Ülesanne 8.2
+paaris=0
+paaritu=0
+for i in range(1, 101):
+    if i%2==0:
+        print(f"{i}-paaris")
+        paaris+=1
+    else:
+        print(f"{i}-paaritu")
+        paaritu+=1
+
+print(f"Paarisarvude arv: {paaris}")
+print(f"Paaritute arvude arv: {paaritu}")
+
+#Ülesanne 8.1
+for arv in range(1, 101):
+    if arv % 5 == 0:
+        print(arv)
+#Ülesanne 10
+for arv in range(1, 101):
+    if arv % 5 == 0:
+        print(arv)
+for i in range(1,6):
+    derivative= i * (i - i)
+    print(f"GH {i} d {derivative}")
+
+#Ülesanne 9.2
+korrutamine=["5"]
+arv=["1","2","3","4","5","6","7","8","9","10",]
+for i in range(10):
+    tulemus = int(arv[i]) * 5
+    print(f"{arv[i]} * 5 = {tulemus}")
+#Ülesanne 9.1
+korrutamine=5
+for i in range(1,11):
+    tulemus=(i) * 5
+    print(f"{i} * 5 = {tulemus}")
+#Ülesanne 7
+number = ["3","3","5","6","9",]
+for num in number:
+    print(num)
 #Ülesanne 3
 k=0
 while True:
