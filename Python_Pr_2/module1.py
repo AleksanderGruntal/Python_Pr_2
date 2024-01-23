@@ -1,6 +1,16 @@
 ﻿﻿from datetime import *
 from random import *
 from math import *
+##Ülesanne 21
+print("Sisesta kolm erineva pikkusega nime: ")
+S=str(input("Esimene nimi: "))
+M=str(input("Teine nimi: "))
+G=str(input("Kolmas nimi: "))
+words = [S, M, G]
+print("Suurem sõna: ")
+print(max(words, key=len))
+print("Väiksem sõna: ")
+print(min(words, key=len))
 #Ülesanne 13
 print("Arv Ruut kuup")
 print()
