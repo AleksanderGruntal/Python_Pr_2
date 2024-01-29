@@ -1,7 +1,30 @@
-﻿﻿from datetime import *
 from random import *
-from math import *
-##Ülesanne 21
+from datetime import *
+#Ülesanne 15
+
+#Ülesanne 14
+for j in range(1,11):
+    for i in range(1,11):
+        print(f"{j*i:4}",end=" ")
+    print()
+print()
+#Ülesanne 12
+algsumma=float(input("Mis summa paneme panka?"))
+alg=lõppsumma=algsumma
+intress=randint(1,10)
+print(f"Paned panka summa, mis võrdub {algsumma}. Intress on {intress}")
+aastad=int(input("Mitmeks aastaks?"))
+print("Aasta Algsumma Intress Aasta_lõpuks")
+for i in range(1,aastad+1):
+    intsumma=(algsumma*intress)/100
+    lõppsumma=algsumma+intsumma
+    print(f"{i} {algsumma} {intsumma} {lõppsumma}")
+    algsumma=lõppsumma
+print(f"Summa kokku: {lõppsumma} Eur")
+print(f"lasum: {lõppsumma-alg} Eur")
+print()
+k=0
+#Ülesanne 21
 print("Sisesta kolm erineva pikkusega nime: ")
 S=str(input("Esimene nimi: "))
 M=str(input("Teine nimi: "))
