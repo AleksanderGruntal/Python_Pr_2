@@ -1,6 +1,22 @@
+
 from random import *
 from datetime import *
-#Ülesanne 15
+#Ülesanne
+a=float(input("Введите целое число"))
+#Ülesanne
+a=float(input("Введите число"))
+print("Введите целое число")
+print("Определяем, сколько в чисел четные и сколько ничетные")
+#Ülesanne
+a=int(input("Введите целое число"))
+print("Это не целове число")
+b=int(input("Введите целое число"))
+print("Это не целове число")
+c=int(input("Введите целое число"))
+print("Это не целове число")
+v=int(input("Введите целое число"))
+print("Нет смысла ничего делать с нулём")
+if print("Введите целое число"):
 
 #Ülesanne 14
 for j in range(1,11):
