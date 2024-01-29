@@ -41,15 +41,17 @@ print(f"lasum: {lõppsumma-alg} Eur")
 print()
 k=0
 #Ülesanne 21
-print("Sisesta kolm erineva pikkusega nime: ")
-S=str(input("Esimene nimi: "))
-M=str(input("Teine nimi: "))
-G=str(input("Kolmas nimi: "))
-words = [S, M, G]
-print("Suurem sõna: ")
-print(max(words, key=len))
-print("Väiksem sõna: ")
-print(min(words, key=len))
+nimi1 = input("Sisestage esimene sõna: ")
+nimi2 = input("Sisestage teine sõna: ")
+nimi3 = input("Sisestage kolmas sõna: ")
+
+sõnad = [nimi1, nimi2, nimi3]
+pikim_sõna = max(sõnad, key=len)
+lühim_sõna = min(sõnad, key=len)
+
+print(f"Kõige pikem sõna: {pikim_sõna}")
+print(f"Kõige lühem sõna: {lühim_sõna}")
+
 #Ülesanne 13
 print("Arv Ruut kuup")
 print()
