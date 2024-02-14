@@ -1,22 +1,18 @@
 
 from random import *
 from datetime import *
-#Ülesanne
-a=float(input("Введите целое число"))
-#Ülesanne
-a=float(input("Введите число"))
-print("Введите целое число")
-print("Определяем, сколько в чисел четные и сколько ничетные")
-#Ülesanne
-a=int(input("Введите целое число"))
-print("Это не целове число")
-b=int(input("Введите целое число"))
-print("Это не целове число")
-c=int(input("Введите целое число"))
-print("Это не целове число")
-v=int(input("Введите целое число"))
-print("Нет смысла ничего делать с нулём")
-if print("Введите целое число"):
+nimed = []
+for i in range(5):
+    nimi = input(f"Sisestage {i+1}. nimi: ").capitalize()
+    nimed.append(nimi)
+
+pikim_sõna = max(nimed, key=len)
+lühim_sõna = min(nimed, key=len)
+
+print(f"Kõige pikem sõna: {pikim_sõna}")
+print(f"Kõige lühem sõna: {lühim_sõna}")
+#+++++++++++++++++++++++++++++++++++++++++
+
 
 #Ülesanne 14
 for j in range(1,11):
