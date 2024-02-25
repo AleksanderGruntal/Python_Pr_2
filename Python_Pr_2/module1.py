@@ -2,9 +2,15 @@
 from random import *
 from datetime import *
 nimed = []
+
 for i in range(5):
-    nimi = input(f"Sisestage {i+1}. nimi: ").capitalize()
-    nimed.append(nimi)
+    while True:
+        nimi = input(f"Sisestage {i+1}. nimi: ").capitalize()
+        if nimi.isalpha():
+            nimed.append(nimi)
+            break
+        else:
+            print("Viga! Sisestage ainult tähed.")
 
 pikim_sõna = max(nimed, key=len)
 lühim_sõna = min(nimed, key=len)
